@@ -1,0 +1,17 @@
+{
+    "elements": {
+        "div": {
+            "attributes": {
+                "style": {},
+                "class": {}
+            }
+        },
+        "ion-icon": {
+            "attributes": {
+                "size": {},
+                "name": {}
+            }
+        }
+    },
+    "attributes": {}
+}

@@ -1,0 +1,77 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11-Sep-2020, 10:54:28
+    Author     : Alex
+*/
+* {
+    font-family: fantasy;
+    font-size: 20px;
+    text-decoration: none;
+}
+.heading{
+    font-style: oblique;
+    font-family: fantasy;
+    font-size: 40px;
+    text-align: center;
+}
+.body{
+    background-color: ghostwhite;
+    height: auto;
+    width: 100%;
+}
+.container {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+.menu-icons {
+    color: black;
+    cursor: pointer;
+}
+.open{
+    top:40px;
+    left:0;
+    width: 20px;
+}
+.close{
+    color: black;
+    text-align: left;
+    position: relative;
+    top:0.5;
+    left:-1.5rem;
+}
+.seperator{
+    width: 100%;
+    border-bottom: black 2px groove; 
+}
+.nav-list.active{
+    left:1.8rem;
+}
+nav{
+    width: 100%;
+    padding-right: 35px;
+}
+.nav-list {  
+    position: fixed;
+    top: 45px;
+    left: -26rem;
+    width: 10rem;
+    height: 8rem;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    transition: all 650ms ease-in-out;
+}
+.nav-link {
+    font-family: fantasy;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
