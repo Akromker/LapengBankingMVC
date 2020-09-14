@@ -3,16 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-//select element
-const selectElement = (s) => document.querySelector(s);
-//open menu on click
-selectElement('.open').addEventListener('click', () => {
-        selectElement('.nav-list').classList.add('active');
-});
-//close menu on click
-selectElement('.close').addEventListener('click', () => {
-        selectElement('.nav-list').classList.remove('active');
-});
+$('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
 
+});
 
 

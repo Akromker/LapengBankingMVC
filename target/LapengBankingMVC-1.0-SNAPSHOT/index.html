@@ -5,37 +5,47 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="HomePage.css" type="text/css">
     </head>
+    
     <body class="body">
-        
-        <header style>
-            <div class="container">
-                <nav>
-                    <div class="menu-icons open">
-                        <ion-icon name="menu-outline" size="large"></ion-icon>                          
-                    </div>
-                    </div>
-                    <div class="seperator"></div>
-                    <ul class="nav-list">
-                        <div class="menu-icons close">
-                            <ion-icon name="close-outline" size="large"></ion-icon>
-                        </div>
-                        <li>
-                            <a href="index.html" class="nav-link">Home</a>
-                        </li>
-                        <li>
-                            <a href="AccountCreation.html" class="nav-link">Create Account</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">Account deposit</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">Account withdrawals</a>
-                        </li>
-                    </ul>
-                </nav>
+        <!-- Navbar by Albi: https://codepen.io/albizan/pen/mMWdWZs -->
+        <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Your Logo</a>
             </div>
-            
-        </header>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home">
+    </section>
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
         
         <script src="HomePageScript.js"></script>
         <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>

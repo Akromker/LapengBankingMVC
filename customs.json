@@ -3,6 +3,7 @@
         "div": {
             "attributes": {
                 "style": {},
+                "id": {},
                 "class": {}
             }
         },
