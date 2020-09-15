@@ -1,4 +1,5 @@
 ExceptionClasses\AccountExistException.class
+Config\JPAconfig.class
 ExceptionClasses\AccountBalanceException.class
 Repositories\AutoPayRepository.class
 ExceptionClasses\AccountDepositException.class
@@ -9,12 +10,12 @@ Repositories\ChequeAccountRepository.class
 Repositories\RegularAccountRepository.class
 ExceptionClasses\AccountSecurityException.class
 model\RegularAccount.class
-Confg\JPAconfig.class
 model\CDaccount.class
 model\InterestAccount.class
 Repositories\BasicAccountRepository.class
 ExceptionClasses\AccountWithdrawException.class
 model\BasicAccount.class
 Repositories\InterestAccountRepository.class
+Config\SpringMvcDispatcherServletInitializer.class
 model\AutoPayAccount.class
 model\ChequeAccount.class

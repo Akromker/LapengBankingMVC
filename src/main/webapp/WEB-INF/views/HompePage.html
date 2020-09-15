@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Home Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="HomePage.css" type="text/css">
+    </head>
+    
+    <body class="body">
+        <!-- Navbar by Albi: https://codepen.io/albizan/pen/mMWdWZs -->
+        <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">LapengBankingMVC</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">Create Account</a></li>
+                    <li><a href="#">Account Deposit</a></li>
+                    <li><a href="#">Account Withdrawals</a></li>
+                    <li><a href="#">Sign in</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home">
+    </section>
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+        
+        <script src="HomePageScript.js"></script>
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    </body>
+</html>
